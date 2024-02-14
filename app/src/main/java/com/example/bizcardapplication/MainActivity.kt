@@ -1,4 +1,4 @@
-package com.example.bizcardapp
+package com.example.bizcardapplication
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -18,7 +18,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
-import androidx.compose.material3.CardColors
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.MaterialTheme
@@ -36,8 +35,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.bizcardapp.ui.theme.BizCardAppTheme
-import com.example.bizcardapplication.R
+import com.example.bizcardapplication.ui.theme.BizCardApplicationTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -242,7 +240,5 @@ fun CreateProfileImage(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    BizCardAppTheme {
-        CreateBizCard()
-    }
+    CreateBizCard()
 }
